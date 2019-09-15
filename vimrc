@@ -45,6 +45,7 @@ Plug 'dense-analysis/ale'
 Plug 'mbbill/undotree'
 
 Plug 'kovisoft/slimv'
+Plug 'kovisoft/paredit'
 
 call plug#end()
 
@@ -61,4 +62,8 @@ let g:ycm_global_ycm_extra_conf='~/.vim/plugged/YouCompleteMe/third_party/ycmd/e
 
 "Lisp
 let g:slimv_swank_cmd = '! xterm -e sbcl --load ~/.vim/plugged/slimv/slime/start-swank.lisp &'
+"paredit
+let g:paredit_mode=1
+let g:paredit_electric_return=0
+let g:lisp_rainbow=1
 
